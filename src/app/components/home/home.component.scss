@@ -1,0 +1,25 @@
+.home{
+    margin-top: 8.1rem;
+
+    &__content__items{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &--text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            h1{
+                font-size: 3.75rem;
+                text-align: center;
+                color: #313926;
+            }
+        }
+
+        &--image{
+            height: 100%;
+        }
+    }
+}
