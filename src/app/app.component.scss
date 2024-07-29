@@ -1,16 +1,16 @@
-.menu{
+.menu {
     height: 100vh;
     display: flex;
     flex-direction: column;
     
-    &__items{
+    &__items {
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 1.8rem 10%;
         box-shadow: 0 8px 6px rgba(0, 0, 0, 0.1);
 
-        &--title{
+        &--title {
             margin-right: auto;
             font-size: 1.5rem;
             
@@ -21,12 +21,13 @@
                 text-decoration: none;
             }
         }
-        &--item{
+        
+        &--item {
             display: flex;
             font-size: 1.4rem;
             margin-right: 1.9rem;
             padding: 5px;
-            
+
             a{
                 text-decoration: none;
                 color: black;
@@ -36,21 +37,22 @@
                 background-color: #313926;
                 color: wheat;
             }
-            
-            &--selected{
-                background-color: #313926;
-                a{
-                    color: wheat;
-                }
+
+        }
+
+        &--selected {
+            background-color: #313926;
+            a{
+                color: wheat;
             }
         }
     }
 
-    &__content{
+    &__content {
         flex: 1;
     }
 
-    &__footer{
+    &__footer {
         width: 100%;
     }
 }
