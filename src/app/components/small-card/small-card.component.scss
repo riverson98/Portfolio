@@ -1,0 +1,55 @@
+.small-card {
+    margin-top: 30px;
+    border: #313926 solid 2px;
+    height: 350px;
+    width: 200px;
+    border-radius: 10px;
+    transition: 0.5s;
+
+    &__items{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        
+        
+        &--image{
+            margin-top: 20px;
+            height: 30%;
+            width: 50%;
+
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        &--title{
+            margin-top: 20px;
+        }
+
+        &--description {
+            margin-top: 20px;
+
+            ul {
+                list-style-type: square;
+            }
+
+            ul li p{
+                margin-bottom: 5px;
+            }
+        }
+
+       
+    }
+
+}
+
+.small-card:hover {
+    background-color: #313926;
+    color: wheat;
+    transform: translateY(-10px);
+    cursor: pointer;
+}

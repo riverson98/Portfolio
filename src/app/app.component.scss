@@ -1,48 +1,56 @@
 .menu{
+    height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1.8rem 10%;
-    backdrop-filter: blur(0.8);
-    box-shadow: 0 8px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    position: sticky;
+    flex-direction: column;
     
-    &__title {
-        margin-right: auto;
-        font-size: 1.5rem;
-        
-        font-weight: bold;
-
-        a{
-            color: #313926;
-            text-decoration: none;
-        }
-    }
-
     &__items{
         display: flex;
-        font-size: 1.4rem;
-        margin-right: 1.9rem;
-        padding: 5px;
-        
-        a{
-            text-decoration: none;
-            color: black;
-        }
+        align-items: center;
+        justify-content: center;
+        padding: 1.8rem 10%;
+        box-shadow: 0 8px 6px rgba(0, 0, 0, 0.1);
 
-        :hover {
-            background-color: #313926;
-            color: wheat;
-        }
-        
-        &--selected{
-            background-color: #313926;
+        &--title{
+            margin-right: auto;
+            font-size: 1.5rem;
+            
+            font-weight: bold;
+    
             a{
+                color: #313926;
+                text-decoration: none;
+            }
+        }
+        &--item{
+            display: flex;
+            font-size: 1.4rem;
+            margin-right: 1.9rem;
+            padding: 5px;
+            
+            a{
+                text-decoration: none;
+                color: black;
+            }
+    
+            :hover {
+                background-color: #313926;
                 color: wheat;
+            }
+            
+            &--selected{
+                background-color: #313926;
+                a{
+                    color: wheat;
+                }
             }
         }
     }
 
-    
+    &__content{
+        flex: 1;
+    }
+
+    &__footer{
+        width: 100%;
+    }
 }

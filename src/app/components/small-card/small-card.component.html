@@ -1,0 +1,18 @@
+<div class="small-card">
+    <div class="small-card__items">
+        <div class="small-card__items--image">
+            <img src="assets/{{ imagePath }}" alt="image">
+        </div>
+        <div class="small-card__items--title">
+            <h2>{{ text }}</h2>
+        </div>
+
+        <div class="small-card__items--description">
+            <ul>
+                <li *ngFor="let description of descriptions">
+                    <p>{{ description }}</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
