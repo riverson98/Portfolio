@@ -1,0 +1,15 @@
+<div class="projects">
+    <div class="projects__items">
+        <div class="projects__items--title">
+            <h1>My projects</h1>
+        </div>
+        <div class="projects__items--contents" *ngFor="let project of projects">
+            <app-big-card [projectTitle]="project.Title" 
+                          [projectDescription]="project.Description"
+                          [imagePath]="project.ImagePath"
+                          [projectLink]="project.ProjectLink">
+            </app-big-card>
+        </div>
+    </div>
+
+</div>

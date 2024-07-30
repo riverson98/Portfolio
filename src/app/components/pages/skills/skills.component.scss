@@ -9,6 +9,8 @@
     &__items{
         width: 70%;
         padding: 30px;
+        display: flex;
+        flex-direction: column;
         
         &--title{
             text-align: center;
@@ -17,9 +19,10 @@
             padding-bottom: 40px;
         }
 
-        &--cards{
+        &--cards {
             justify-content: center;
             display: flex;
+            
             flex-wrap: wrap;
             gap: 5rem;
     

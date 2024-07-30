@@ -1,0 +1,15 @@
+<div class="skills">
+    <div class="skills__items">
+        <div class="skills__items--title">
+            <h1>My skills...</h1>
+        </div>
+    
+        <div class="skills__items--cards">
+            <div class="skills_items__cards" *ngFor="let skill of skills">
+                <app-small-card [text]="skill.Title" 
+                [description]="skill.Description"
+                [imagePath]="skill.ImagePath">
+            </app-small-card>
+            </div>
+    </div>
+</div>

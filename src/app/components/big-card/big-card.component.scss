@@ -1,0 +1,56 @@
+.big-card {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        &--title {
+            font-size: 40px;
+            color: #313926;
+            padding-bottom: 40px;
+        }
+
+        &__content {
+            transition: 0.5s;
+
+            &--link {
+                display: flex;
+                align-items: center;
+                background-color: #F5F1E3;
+                padding: 20px;
+                border-radius: 15px;
+                color: black;
+            }
+
+            &--image {
+                display: flex;
+                height: 356px;
+                align-items: center;
+                width: 700px;
+
+                img {
+                    height: 80%;
+                    width: 80%;
+                }
+            }
+
+            &--text {
+                width: 900px;
+
+                h1 {
+                    font-size: 60px;
+                }
+            }
+        }
+
+
+        &__content:hover {
+            box-shadow: 8px 8px 6px rgba(0, 0, 0, 0.2);
+            transform: translateY(-20px);
+        }
+    }
+}
