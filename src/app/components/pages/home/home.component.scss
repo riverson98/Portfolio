@@ -1,5 +1,5 @@
 .home{
-    margin-top: 8.1rem;
+    padding-top: 8.1rem;
 
     &__content__items{
         display: flex;
@@ -19,7 +19,7 @@
         }
 
         &--image{
-            height: 100%;
+            max-height: 100%;
         }
     }
 }

@@ -21,7 +21,7 @@ export class SkillsComponent implements OnInit {
         ['Entity Framework', 'Web Api', 'ASP.NET'],
         'dotnet.png'),
 
-      new SkillModel('Customer-Base',
+      new SkillModel('Java',
         ['Spring-boot', 'Web-flux', 'Quarkus', 'Hibernate'],
         'java.png',
         ),
